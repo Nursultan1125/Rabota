@@ -1,0 +1,70 @@
+{% extends 'index.html' %}
+{% load i18n %}
+{% load static %}
+{% block header_to_main %}
+    <a href="{%  url "index" %} " class="navbar-brand turkiston active">азаттык</a>
+{% endblock %}
+{% block title %}{{ article.article_title }}{% endblock %}
+{% block section %}{% endblock section %}
+{% block corusel %}{% endblock corusel %}
+{% block body %}
+
+<div class="container">
+		<img class="img-thumbnail" src="{{ article.article_image.url }}" width="1000">
+						<h2 class="post-title">
+							{{ article.article_title }}
+						</h2>
+						<p><span class="post-fecha"> {{ article.article_date_create|date:"d-N Y-жыл" }}</span>  <span class="post-autor"><a href="#">{{ article.article_author }}</a></span></p>
+					</a>
+
+					<p class="post-content text-justify">
+						{{ article.article_content }}
+					</p>
+    <hr/>
+	</div>
+{% endblock body %}
+{% block footer %}
+	<footer>
+        {% block footer_nav %}
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<p>Баардык укуктар корголгон 2017</p>
+				</div>
+				<div class="col-xs-6">
+					<ul class="list-inline  text-right">
+						<li><a href="s>Негизиги бет</a></li>
+						<li><a href="#"> Маалыматтар{% trans "</" %}a></li>
+						<li><a href="">Биз менен байланыш</a></li>
+						<li><a href="">Суроолор</a></li>
+					</ul>
+				</div>
+			</div>
+         </div>
+         {% endblock footer_nav %}
+        {% block footer_b %}
+    <ul class="social__list">
+		<li class="social__item">
+			<a href="#" class="social__link">link1</a>
+		</li>
+		<li class="social__item">
+			<a href="#" class="social__link tw">link2</a>
+		</li>
+		<li class="social__item">
+			<a href="#" class="social__link in">link3</a>
+		</li>
+	</ul>
+              {% endblock footer_b %}
+	</footer>
+  {% endblock footer %}
+
+
+
+
+
+
+
+
+
+
+

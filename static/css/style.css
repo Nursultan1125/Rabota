@@ -1,0 +1,169 @@
+.navbar{
+	margin-bottom: 0;
+}
+
+.jumbotron{
+	background:#428BCA;
+	color: #fff;
+	padding: 20px 0;
+}
+
+.titulo-blog{
+	
+}
+
+
+
+
+
+
+.main{
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.post{
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #999;
+}
+
+.post.post-title a{
+	color: #333;
+
+}
+
+.post.thumb{
+	margin-right: 10px;
+	width: 40%;
+
+}
+
+.post.thumb img{
+	width: 50%;
+}
+
+.post.contenedor-botones{
+	width: 100%;
+	background-color: red;
+}
+
+
+
+@media screen and (max-width: 768px){
+	.post.thumb{
+	width: 100px;
+	margin-bottom:20px;
+	margin-right: 0;
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+ul.social{
+	margin: 0;
+	padding: 0;
+	padding: absolute;
+	top: 50%
+	left:50%;
+	transform: translate(-50%,50%);
+}
+
+
+ul.social,li.fa{
+	list-style: none;
+	float: left;
+	margin: 10px;
+	width: 100px;
+	height: 100px;
+	line-height:100px ;
+	text-align: center;
+	background: #fff;
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+	color: #262626;
+	z-index: 1;
+	transition: -5s ease-in-out;
+	font-size: 50px;
+
+}
+
+
+ul.social,li.fa:before{
+	content: '';
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top:0;
+	background: #ccc;
+	z-index: -1;
+	border-radius: 50%;
+	transform: scale(0);
+	transition: .3s ease-in-out;
+
+
+}
+
+ul.social,li.fa :hover:before{
+
+	left: 0;
+	transform: scale(.9);
+
+}
+
+ul.social,li.fa:nth-child(1):before{
+  background: #3b5959;
+}
+
+
+
+.turkiston{
+	font-size: 40px;
+	color: red;
+	font-weight: 10px;
+}
+
+
+.social__list {
+	margin: 50px;
+	padding: 0;
+}
+
+.social__item {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.social__link {
+	display: block;
+	width: 38px;
+	height: 38px;
+	background: url(../img/icon_sprite.png) no-repeat;
+	text-indent: -9999px;
+	transition: .5s;
+}
+
+.tw {
+	background-position: -38px 0;
+}
+.in {
+	background-position: -76px 0;
+}
+.social__link:hover {
+	background-position: 0 -38px;
+}
+.tw:hover {
+	background-position: -38px -38px;
+}
+.in:hover {
+	background-position: -76px -38px;
+}
